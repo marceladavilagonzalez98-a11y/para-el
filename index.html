@@ -4,15 +4,31 @@
 <title>Para ti ❤️</title>
 
 <style>
+
 body{
 font-family: Arial;
-background:#f7f0ff;
+background: linear-gradient(135deg,#f3d9ff,#e7c6ff);
 text-align:center;
 padding:50px;
+margin:0;
+}
+
+.card{
+background:white;
+padding:30px;
+border-radius:15px;
+box-shadow:0 10px 20px rgba(0,0,0,0.1);
+max-width:600px;
+margin:auto;
 }
 
 h1{
 color:#7b2cbf;
+animation: aparecer 2s ease;
+}
+
+h2{
+color:#5a189a;
 }
 
 button{
@@ -22,6 +38,23 @@ background:#c77dff;
 border:none;
 border-radius:10px;
 cursor:pointer;
+margin-top:20px;
+}
+
+button:hover{
+background:#9d4edd;
+color:white;
+}
+
+img{
+width:250px;
+margin:10px;
+border-radius:10px;
+}
+
+@keyframes aparecer{
+from{opacity:0; transform:translateY(-20px);}
+to{opacity:1; transform:translateY(0);}
 }
 
 </style>
@@ -29,7 +62,9 @@ cursor:pointer;
 
 <body>
 
-<h1>Hice esta página para ti</h1>
+<div class="card">
+
+<h1>Hice esta página para ti ❤️</h1>
 
 <p>
 Porque sé que te gustan las páginas web y quería intentar
@@ -44,13 +79,35 @@ entrar un poquito a tu mundo.
 
 <button onclick="mensaje()">Haz clic aquí</button>
 
+<br><br>
+
+<h2>Un poco de música</h2>
+
+<audio controls>
+<source src="piano.mp3" type="audio/mpeg">
+</audio>
+
+<br><br>
+
+<h2>Nuestros momentos</h2>
+
+<img src="foto1.jpg">
+<img src="foto2.jpg">
+
+</div>
+
 <script>
+
 function mensaje(){
 alert("Sabía que ibas a hacer clic ❤️");
 }
+
 </script>
 
-<!-- Si estás viendo el código... eres el programador que más admiro -->
+<!--
+Si estás leyendo este código,
+es porque eres el programador que más admiro ❤️
+-->
 
 </body>
 </html>
